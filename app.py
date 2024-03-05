@@ -42,7 +42,7 @@ containing tips/suggestions to increase the JD match score by recommending chang
 ## streamlit app
 st.title("Smart ATS")
 st.text("Improve Your Resume | Tech Jobs")
-jd=st.text_area("Paste the Job Description")
+jd=st.text_area("Paste the Job Description", height = 350)
 uploaded_file=st.file_uploader("Upload Your Resume",type="pdf",help="Please upload the resume in pdf format")
 
 submit = st.button("Submit")
