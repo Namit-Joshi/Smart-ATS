@@ -64,9 +64,3 @@ if submit:
         st.write("**Missing Keywords:**", ", ".join(parsed_response["Missing Keywords"]))
         st.write("**Profile Summary:**", parsed_response["Profile Summary"])
         st.write("**Tips/Suggestions:**", parsed_response["Tips/Suggestions"])
-
-if __name__ == '__main__':
-    import os
-    port = int(os.environ.get('PORT', 8000))
-    host = '0.0.0.0'
-    app.run(port=port, host=host)
